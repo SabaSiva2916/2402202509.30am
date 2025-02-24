@@ -1,0 +1,24 @@
+{
+	"name": "Suresh",
+	"age": 25,
+	"address": {
+		"doorNo": "12/a",
+		"streetName": "Raja nager",
+		"district": "Chennai",
+		"pincode": 600097
+	},
+	"departments": [
+		{
+			"departmentName": "Aerospace",
+			"departmentHead": "Suresh"
+		},
+		{
+			"departmentName": "Mechanical",
+			"departmentHead": "Thomas"
+		},
+		{
+			"departmentName": "IT",
+			"departmentHead": "Mohammed"
+		}
+	]
+}
