@@ -1,8 +1,11 @@
 package junitorgexample;
 
-
 import org.junit.Ignore;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Sample {
 
@@ -35,4 +38,15 @@ public class Sample {
 		System.out.println("Method 5");
 	}
 
+	@Test
+	public void tc06() {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(" ");
+		WebElement txtUserName = driver.findElement(By.id("email"));
+		txtUserName.sendKeys("Welcome!!!");
+
+		WebElement txtPassword = driver.findElement(By.id("pass"));
+		txtPassword.sendKeys("Welcome@123");
+	}
 }
