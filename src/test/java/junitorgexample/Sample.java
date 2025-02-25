@@ -1,6 +1,5 @@
 package junitorgexample;
 
-
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -35,4 +34,17 @@ public class Sample {
 		System.out.println("Method 5");
 	}
 
+	public static void main(String[] args) {
+
+		// String Reverse Program
+		String str = "India";
+		String output = "";
+
+		for (int i = str.length() - 1; i >= 0; i--) {
+			char c = str.charAt(i);
+			output = output + c;
+		}
+
+		System.out.println("Reverse of given String is :" + output);
+	}
 }
